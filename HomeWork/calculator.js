@@ -22,7 +22,7 @@ let a=document.forms[0].price;
     let b9=document.forms[0].count9;
     let result=a.value*b.value+a1.value*b1.value+a2.value*b2.value+a3.value*b3.value+a4.value*b4.value+a5.value*b5.value+a6.value*b6.value+a7.value*b7.value+a8.value*b8.value+a9.value*b9.value;
     let res=document.getElementById("result");
-    if(isNaN(result))
+    if(result<0)
     {res.innerHTML="Введены неправильные данные";}
     else{res.innerHTML="Стоимость заказа: "+result+" рублей";}
 }
